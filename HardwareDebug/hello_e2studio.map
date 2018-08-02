@@ -1,0 +1,69 @@
+Renesas Optimizing Linker (W2.07.00 )             02-Aug-2018 22:00:07
+
+*** Options ***
+
+-subcommand=Linkerhello_e2studio.tmp
+-device="C:\Renesas\e2_studio\eclipse\\..\\DebugComp\\RL78\RL78\Common\DR5F10CGB.DVF"
+-list="hello_e2studio.map"
+-nooptimize
+-entry=_start
+-auto_section_layout
+-security_id=0
+-debug_monitor=05E00-05FFF
+-input=".\generate\cstart.obj"
+-input=".\generate\hdwinit.obj"
+-input=".\generate\stkinit.obj"
+-input=".\src\hello_e2studio.obj"
+-library="C:\PROGRA~2\Renesas\RL78\1_5_0\lib\rl78cm4s.lib"
+-library="C:\PROGRA~2\Renesas\RL78\1_5_0\lib\rl78cm4r.lib"
+-library="C:\PROGRA~2\Renesas\RL78\1_5_0\lib\malloc_n.lib"
+-output="hello_e2studio.abs"
+-debug
+-nocompress
+-memory=high
+-rom=.data=.dataR,.sdata=.sdataR
+-nomessage
+-nologo
+
+*** Error information ***
+
+W0561520:"user option byte" in ".option_byte" created by device file
+W0561520:"on chip debug" in ".option_byte" created by device file
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000089         a   2
+.data
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.text
+                                  000000d8  0000012a        53   1
+.textf
+                                  0000012b  00000178        4e   1
+.RLIB
+                                  00000179  00000c97       b1f   1
+.SLIB
+                                  00000c98  00002b2d      1e96   1
+.const
+                                  00003000  0000300f        10   2
+.monitor2
+                                  00005e00  00005fff       200   1
+.bss
+                                  000ff700  000ff77f        80   2
+.dataR
+                                  000ff780  000ff780         0   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2

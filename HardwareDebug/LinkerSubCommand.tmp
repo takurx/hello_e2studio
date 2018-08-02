@@ -1,0 +1,7 @@
+-input=".\generate\cstart.obj"
+-input=".\generate\hdwinit.obj"
+-input=".\generate\stkinit.obj"
+-input=".\src\hello_e2studio.obj"
+-library="C:\PROGRA~2\Renesas\RL78\1_5_0\lib\rl78cm4s.lib"
+-library="C:\PROGRA~2\Renesas\RL78\1_5_0\lib\rl78cm4r.lib"
+-library="C:\PROGRA~2\Renesas\RL78\1_5_0\lib\malloc_n.lib"
